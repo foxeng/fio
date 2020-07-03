@@ -754,6 +754,8 @@ EOF
 if compile_prog "" "$LIBS" "posix_pshared" ; then
   posix_pshared=yes
 fi
+# Disable explicitly
+posix_pshared="no"
 print_config "POSIX pshared support" "$posix_pshared"
 
 ##########################################
