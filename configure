@@ -1117,6 +1117,8 @@ EOF
       clock_monotonic_raw="yes"
   fi
 fi
+# Disable explicitly
+clock_monotonic_raw="no"
 print_config "CLOCK_MONOTONIC_RAW" "$clock_monotonic_raw"
 
 ##########################################
